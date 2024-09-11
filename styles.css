@@ -217,7 +217,7 @@
 }
 
 .main__content h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     background-color:  #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     background-size: 100%;
@@ -242,6 +242,13 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
+    color: #fff;
+}
+
+.main__content p2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
     color: #fff;
 }
 
@@ -354,7 +361,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .services h1{
@@ -394,7 +401,7 @@
     rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 100%), url('/images/pic1.svg');   
 }
 
-.services h2 {
+.services__card h2 {
     position: absolute;
     top: 350px;
     left: 30px;
