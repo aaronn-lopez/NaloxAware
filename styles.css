@@ -415,7 +415,7 @@
         rgba(0, 0, 0, 0) 0%,
         rgba(17, 17, 17, 0.6) 100%
       ),
-      url('/NPWebsite/images/naloxaware_profile1.jpg');
+      url('/images/naloxaware_profile1.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -423,17 +423,17 @@
 
 .services__card:nth-child(2) {
     background-image: linear-gradient(to bottom,
-    rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 100%), url('/NPWebsite/images/naloxaware_profile2.jpg');   
+    rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 100%), url('/images/naloxaware_profile2.jpg');   
 }
 
 .services__card:nth-child(3) {
     background-image: linear-gradient(to bottom,
-    rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 100%), url('/NPWebsite/images/naloxaware_profile3.jpg');   
+    rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 100%), url('/images/naloxaware_profile3.jpg');   
 }
 
 .services__card:nth-child(4) {
     background-image: linear-gradient(to bottom,
-    rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 100%), url('/NPWebsite/images/naloxaware_profile4.jpg');   
+    rgba(0,0,0,0) 0%,rgba(17, 17, 17, 0.6) 100%), url('/images/naloxaware_profile4.jpg');   
 }
 
 .services__card h2 {
