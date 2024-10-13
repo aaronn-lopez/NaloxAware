@@ -262,6 +262,22 @@
     color: #fff;
 }
 
+.main__content a{
+    text-decoration: none;
+}
+.main__content a:link{
+    color:#36c;
+}
+.main__content a:visited{
+    color:#6a60b0;
+}
+.main__content a:hover{
+    color:#4b77d6;
+}
+.main__content a:active{
+    color:lightblue;
+}
+
 .main__btn {
     font-size: 1rem;
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
