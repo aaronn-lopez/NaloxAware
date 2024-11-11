@@ -206,6 +206,40 @@
     }
 }
 
+/*Home page hero section: image with text overlaid*/
+.hero {
+    height: 100vh;
+    background-image: var(--hero-bg-image);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+} 
+.hero-heading {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    text-align: center;
+}  
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+@media (max-width: 768px) {
+    
+}
+
 .main {
     background-color: #141414;
 }
@@ -327,6 +361,10 @@
 
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
     .main__container {
         display: grid;
         grid-template-columns: auto;
@@ -356,6 +394,9 @@
         font-size: 1.5rem;
     }
 
+    .hero-heading{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
