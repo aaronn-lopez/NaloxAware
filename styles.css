@@ -126,16 +126,17 @@ body{
 
     .navbar__menu {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         margin: 0;
         width: 100%;
         position: absolute;
         top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
-        height: 50vh;
+        height: calc(50vh + 50px);
         z-index: -1;
         background: #131313;
+        padding-bottom: 1rem;
     }
 
     .navbar__menu.active {
@@ -144,7 +145,7 @@ body{
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
+        height: calc(50vh + 50px);
         font-size: 1.6rem;
     }
 
