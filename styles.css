@@ -243,9 +243,6 @@ body{
     background: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
-@media (max-width: 768px) {
-    
-}
 
 .main__container {
     display: grid;
@@ -257,7 +254,7 @@ body{
     width: 100%;
     max-width: 1300px;
     padding: 30px 50px;
-    padding-bottom: 10rem;
+    padding-bottom: 7rem;
 }
 
 .main__content h2 {
@@ -337,6 +334,10 @@ body{
 
 .main__img--container {
     text-align: center;
+}
+
+.main__img--container img{
+    margin-bottom: 3rem;
 }
 
 #main__img {
@@ -536,12 +537,19 @@ body{
   }
   
   #footer__logo {
-    color: #fff;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #cac083 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
 
   .footer__img--container {
