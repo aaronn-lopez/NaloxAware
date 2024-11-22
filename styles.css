@@ -33,7 +33,7 @@ body{
 
 #navbar__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to top, #cac083 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -421,11 +421,9 @@ body{
 
 .services h1{
     background-color: #ff8177;
-    background-image: linear-gradient(to right,
-    #ff8177 0%,#ff867a 0%,#ff8c7f 21%,
-    #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    background-image: linear-gradient(to top, #000 0%, #013c56 100%);
     background-size: 100%;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -441,6 +439,7 @@ body{
 
 .services__card {
     margin: 1rem;
+    margin-bottom: 2rem;
     height: 525px;
     width: 400px;
     border-radius: 4px;
