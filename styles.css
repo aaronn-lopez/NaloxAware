@@ -44,6 +44,7 @@ body{
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .nav__img--container {
