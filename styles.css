@@ -526,6 +526,45 @@ body{
     }
 }
 
+/* Slide in bio panel for services cards */
+.bio-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .bio-panel h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .bio-panel p {
+    margin: 0 0 20px;
+    color: #333;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .bio-panel.open {
+    right: 0;
+  }
+
 /* Footer CSS */
 .footer__container {
     background: #303f4b;
