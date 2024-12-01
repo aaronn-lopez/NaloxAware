@@ -8,11 +8,12 @@ menu.addEventListener('click', function() {
 });
 
 //bio panels for team members
-function openBio(name, role, content) {
+function openBio(name, role, content, imageAddress) {
     const panel = document.getElementById('bio-panel');
     document.getElementById('bio-name').textContent = name;
     document.getElementById('bio-role').textContent = role;
     document.getElementById('bio-content').textContent = content;
+    document.getElementById('bio-image').src = imageAddress;
   
     panel.classList.add('open');
 }

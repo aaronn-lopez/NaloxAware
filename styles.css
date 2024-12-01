@@ -563,12 +563,12 @@ body{
   position: fixed;
   left: 0;
   bottom: -100%;
-  width: 90%;
-  height: 40%;
+  width: 100%;
+  height: 50%;
   background-image: linear-gradient(to top, #fff 0%, #cac083 100%);
   border-radius: 12px 12px 0 0;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 30px;
   overflow-y: auto;
   transition: bottom 0.3s ease-in-out;
   z-index: 1000;
@@ -588,6 +588,23 @@ body{
   bottom: 0; /* move the panel into view */
 }
 
+.bio-panel-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+#bio-image {
+  max-height: 40vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bio-text {
+  flex: 1;
+}
+
 .close-btn {
   position: absolute;
   top: 10px;
@@ -604,15 +621,20 @@ body{
 }
 
 @media screen and (min-width: 550px) {
-  .bio-panel {
-    transform: translateX(5%);
+  #bio-image {
+    margin-right: 40px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .bio-panel {
-    width: 100%;
-    height: 70%;
+    height: 80%;
+  }
+
+  .bio-panel-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
