@@ -20,8 +20,14 @@ body{
   }
 }
 
-.should__animate__slide-in{
+.should__animate__slide-in {
   animation: slide-in 800ms both;
+}
+
+/* applied to content before animation takes place so that animation looks better */
+/* only applied through javascript so that if javascript is disabled, everything won't be invisible */
+.invisible {
+  opacity: 0;
 }
 
 .navbar {
@@ -270,10 +276,6 @@ body{
   max-width: 1300px;
   padding: 30px 50px;
   padding-bottom: 7rem;
-}
-
-.main__content {
-  opacity: 0; /* this gets set to 1 in the animation */
 }
 
 .main__content h2 {

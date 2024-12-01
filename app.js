@@ -28,13 +28,15 @@ var observer = new IntersectionObserver(function(entries) {
         (element)=>{
             if(element.isIntersecting){
                 element.target.classList.add('should__animate__slide-in');
+                element.target.classList.remove('invisible');
                 console.log(element.target.className);
             }
         }
     );
-}, { threshold: [0.5] });
+}, { threshold: [0.3] });
 
 var contents=document.getElementsByClassName('main__content');
 Array.from(contents).forEach(element => {
+    element.classList.add('invisible'); //set elements opacity to 0 so the animation looks better
     observer.observe(element);
 });
