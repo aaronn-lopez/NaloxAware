@@ -576,12 +576,13 @@ body{
 
 .bio-panel h2 {
   margin: 0 0 10px;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .bio-panel p {
   margin: 0 0 20px;
   color: #333;
+  font-size: 1.3em;
 }
 
 .bio-panel.open {
@@ -599,6 +600,7 @@ body{
   max-height: 40vh;
   object-fit: cover;
   border-radius: 10px;
+  align-self: center;
 }
 
 .bio-text {
@@ -621,6 +623,11 @@ body{
 }
 
 @media screen and (min-width: 550px) {
+  .bio-panel-content {
+    justify-content: space-between;
+    height: 100%;
+  }
+
   #bio-image {
     margin-right: 40px;
   }
