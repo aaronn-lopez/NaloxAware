@@ -683,7 +683,7 @@ body{
 }
 
 #footer__img {
-  height: 20%;
+  max-height: 20%;
   width: 20%;
   margin-top: 2px;
   margin-right: 2px;
